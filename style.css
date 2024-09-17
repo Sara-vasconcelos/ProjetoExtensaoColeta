@@ -1,0 +1,543 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-primary-1:#4f772d;
+    --color-primary-2:#1d1d1d;
+}
+
+* {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color:white;
+    }
+    
+    section{
+        padding: 28px 8%;
+    
+    }
+
+    .btn-default{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #40916c;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-weight: 600;
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0, 0.1);
+        cursor: pointer;
+        
+        transition: background-color .3s ease;
+    }
+
+    .btn-default a{
+        text-decoration: none;
+        color: #1d1d1d;
+    }
+
+    .btn-default:hover{
+        background-color: #74c69d;
+    }
+
+    .section-title{
+        color: var(--color-primary-1);
+        font-size: 1.563rem;
+    
+    }
+
+    .section-subtitle{
+        font-size: 2.1875rem;
+    }
+
+header{
+    width : 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: #ccc;
+    z-index: 3;
+    
+
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo{
+    font-size: 24px;
+    color: var(--color-primary-1);
+}
+
+#nav_list{
+    display:flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:#1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color:var(--color-primary-2);
+    border-bottom: 3px solid  #40916c;
+}
+
+.nav-item a:hover {
+    color:var(--color-primary-2);
+    border-bottom: 3px solid  #40916c;
+}
+
+#mobile-btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+
+
+    
+
+
+    #home{
+        display: flex;
+        min-height: calc(100vh- 91px);
+        position: relative;
+    }
+
+    #home span{
+        color: var(--color-primary-1);
+        font-weight: bold;
+    }
+
+    
+
+    #cta{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap:28px;
+        margin-top: 5%;
+    }
+
+    #cta .title{
+        font-size: 3.5rem;
+        color: var(--color-primary-2);
+    
+    }
+
+    
+#cta .title span{
+    color: var(--color-primary-1);
+}
+
+#cta .description{
+    font-size: 1.2rem;
+}
+
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#banner img{
+    height: 100%;
+    width: fit-content;
+
+}
+
+
+
+#sobre{ /*destinos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#motivosEcores { /*destinospopulares*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de tamanho igual */
+    justify-items: center;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+#motivosEcores img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.motivo-description{
+    text-align:center;
+    color: #434343;
+
+    
+}
+.motivo-title{/*destino-title*/
+    justify-content: center;
+    text-align: center;
+    color: #679436;
+
+    
+}
+
+h2{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--color-primary-1);
+    
+}
+.funcionamento{
+    color: #1d1d1d;
+}
+.explicacao-video{
+    min-height: calc(100vh-91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.explicacao-video img {
+    width: 500px;
+    height: auto;
+}
+
+.explicacao-video p{
+    color: #434343;
+    font-weight: 50px;
+    margin:auto;
+    line-height: 30px;
+}
+
+iframe{
+    margin-top: 20px;
+}
+#duvidas{ /*avaliacao*/
+    min-height: calc(100vh-91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.duvida_image{
+    width: 500px;
+    height: auto;
+}
+
+#duvidas .section-subtitle{ /*avaliacao*/
+    font-size: 2rem;
+    text-align: center;
+    }
+
+    
+    
+
+
+
+#feedbacks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.feedback{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow:  0px 0px 10px 8px rgba(0,0,0, 0.1);
+    border: solid 2px #95d5b2;
+}
+
+.feedback-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedback-content p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-content p span{
+    color:var(--color-primary-1) ;
+}
+
+.btn-default a {
+    text-decoration: none;
+    color:var(--color-primary-2);
+    
+}
+
+#duvidas { /*avaliacao*/
+
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 8%;
+    background-color: rgba(79, 119, 45, 0.6); /* Verde com 80% de opacidade */
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+#copyright{
+    color: var(--color-primary-2);
+    font-weight: 500;
+}
+
+#footer_items{
+    
+    text-align: center;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+.feedback-content {
+    position: relative;
+}
+
+.feedback-content p {
+    margin: 0;
+    transition: opacity 0.3s ease, max-height 0.5s ease; /* Adiciona transição suave */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.feedback-content:hover p {
+    opacity: 1;
+    max-height: 100px; /* Ajuste conforme necessário para acomodar o conteúdo */
+}
+
+.feedback-content p:first-of-type {
+    opacity: 1;
+    max-height: none; /* Garante que o primeiro parágrafo esteja sempre visível */
+}
+
+.mensagem-final {
+    margin: 0 auto; /* Centraliza o bloco */
+    padding: 16px 20px; /* Margem lateral personalizada */
+    max-width: 800px; /* Limita a largura máxima para manter a margem */
+}
+
+.mensagem-final p {
+    line-height: 2.0; /* Aumenta o espaçamento entre as linhas do parágrafo */
+    margin: 0; /* Remove margens padrão do parágrafo */
+    text-align: center;
+}
+
+.bloco-final{
+    margin-bottom: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        
+        padding-top: 0px;
+    }
+
+    #banner, 
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
+
+    #duvidas { /*avaliacao*/
+        flex-direction: column;
+    }
+
+    #duvidas .section-subtitle {/*avaliacao*/
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    
+
+    #duvida_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explicacao-video img {
+        display: none;
+    }
+
+    .explicacao-video p{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #duvidas .section-subtitle{ /*avaliacao*/
+        font-size: 2rem;
+    }
+
+    #sobre .section-subtitle{ /*destinos*/
+        font-size: 1.5rem;
+    }
+
+    #duvida_content {
+        width: 100%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+
+    #footer_items{
+        justify-content: center;
+    } 
+
+    #cta .title{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+   
+    #motivosEcores { /*destinospopulares*/
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .motivo { /*destino*/
+        width: calc(50% - 18px);
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+  
+    .motivo{/*destino*/
+        width: 100%;
+    }
+
+    .motivo img{/*destino*/
+        width: 100%; 
+    }
+
+    #sobre .section-subtitle { /*destinos*/
+        text-align: center;
+    }
+
+    .explicacao-video p{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .explicacao-video{
+        margin: auto;
+    }
+#nav_logo{
+    display: none;
+}
+iframe{
+    width: 400px;
+    height: 400px;
+}
+}
+
+@media screen and (max-width:600px){
+    #testimonials .section-subtitle{
+        font-size: 2rem;
+    }
+
+    #testimonials_content{
+        width: 100%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+
+    .duvida_image{
+        display: none;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width:500px){
+    iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .nav-item{
+        display: none;
+    }
+    #nav_logo{
+        display:flex;
+        font-size: 20px;
+    }
+   
+
+
+}
+@media (max-width: 768px) {
+    #motivosEcores {/*destinospopulares*/
+        grid-template-columns: 1fr; /* 1 coluna para telas menores */
+    }
+}
+
+
+
+
